@@ -1,0 +1,228 @@
+{
+  "schema_version": "1.0",
+  "description": "SAMPLE ONLY - synthetic EVE-NG inventory, not deployed",
+  "sites": [
+    {
+      "site_id": 0,
+      "name": "DC",
+      "tier": "datacenter",
+      "site_pool": "10.0.0.0/16",
+      "vlans": [
+        {
+          "vlan_id": 100,
+          "purpose": "Management",
+          "subnet": "10.0.0.0/24"
+        },
+        {
+          "vlan_id": 110,
+          "purpose": "Users wired",
+          "subnet": "10.0.10.0/24"
+        },
+        {
+          "vlan_id": 120,
+          "purpose": "Corporate Wi-Fi",
+          "subnet": "10.0.20.0/24"
+        },
+        {
+          "vlan_id": 130,
+          "purpose": "Guest Wi-Fi",
+          "subnet": "10.0.30.0/24"
+        },
+        {
+          "vlan_id": 140,
+          "purpose": "Voice",
+          "subnet": "10.0.40.0/24"
+        },
+        {
+          "vlan_id": 150,
+          "purpose": "Printers",
+          "subnet": "10.0.50.0/24"
+        },
+        {
+          "vlan_id": 160,
+          "purpose": "CCTV",
+          "subnet": "10.0.60.0/24"
+        },
+        {
+          "vlan_id": 170,
+          "purpose": "Access Control",
+          "subnet": "10.0.70.0/24"
+        },
+        {
+          "vlan_id": 700,
+          "purpose": "Quarantine",
+          "subnet": "10.0.200.0/24"
+        }
+      ]
+    },
+    {
+      "site_id": 10,
+      "name": "Gold",
+      "tier": "gold",
+      "site_pool": "10.10.0.0/16",
+      "vlans": [
+        {
+          "vlan_id": 100,
+          "purpose": "Management",
+          "subnet": "10.10.0.0/24"
+        },
+        {
+          "vlan_id": 110,
+          "purpose": "Users wired",
+          "subnet": "10.10.10.0/24"
+        },
+        {
+          "vlan_id": 120,
+          "purpose": "Corporate Wi-Fi",
+          "subnet": "10.10.20.0/24"
+        },
+        {
+          "vlan_id": 130,
+          "purpose": "Guest Wi-Fi",
+          "subnet": "10.10.30.0/24"
+        },
+        {
+          "vlan_id": 140,
+          "purpose": "Voice",
+          "subnet": "10.10.40.0/24"
+        },
+        {
+          "vlan_id": 150,
+          "purpose": "Printers",
+          "subnet": "10.10.50.0/24"
+        },
+        {
+          "vlan_id": 160,
+          "purpose": "CCTV",
+          "subnet": "10.10.60.0/24"
+        },
+        {
+          "vlan_id": 170,
+          "purpose": "Access Control",
+          "subnet": "10.10.70.0/24"
+        },
+        {
+          "vlan_id": 700,
+          "purpose": "Quarantine",
+          "subnet": "10.10.200.0/24"
+        },
+        {
+          "vlan_id": 200,
+          "purpose": "Core-to-firewall transit",
+          "subnet": "10.10.254.0/30"
+        }
+      ]
+    },
+    {
+      "site_id": 20,
+      "name": "Silver",
+      "tier": "silver",
+      "site_pool": "10.20.0.0/16",
+      "vlans": [
+        {
+          "vlan_id": 100,
+          "purpose": "Management",
+          "subnet": "10.20.0.0/24"
+        },
+        {
+          "vlan_id": 110,
+          "purpose": "Users wired",
+          "subnet": "10.20.10.0/24"
+        },
+        {
+          "vlan_id": 120,
+          "purpose": "Corporate Wi-Fi",
+          "subnet": "10.20.20.0/24"
+        },
+        {
+          "vlan_id": 130,
+          "purpose": "Guest Wi-Fi",
+          "subnet": "10.20.30.0/24"
+        },
+        {
+          "vlan_id": 140,
+          "purpose": "Voice",
+          "subnet": "10.20.40.0/24"
+        },
+        {
+          "vlan_id": 150,
+          "purpose": "Printers",
+          "subnet": "10.20.50.0/24"
+        },
+        {
+          "vlan_id": 160,
+          "purpose": "CCTV",
+          "subnet": "10.20.60.0/24"
+        },
+        {
+          "vlan_id": 170,
+          "purpose": "Access Control",
+          "subnet": "10.20.70.0/24"
+        },
+        {
+          "vlan_id": 700,
+          "purpose": "Quarantine",
+          "subnet": "10.20.200.0/24"
+        },
+        {
+          "vlan_id": 200,
+          "purpose": "Core-to-firewall transit",
+          "subnet": "10.20.254.0/30"
+        }
+      ]
+    },
+    {
+      "site_id": 30,
+      "name": "Bronze",
+      "tier": "bronze",
+      "site_pool": "10.30.0.0/16",
+      "vlans": [
+        {
+          "vlan_id": 100,
+          "purpose": "Management",
+          "subnet": "10.30.0.0/24"
+        },
+        {
+          "vlan_id": 110,
+          "purpose": "Users wired",
+          "subnet": "10.30.10.0/24"
+        },
+        {
+          "vlan_id": 120,
+          "purpose": "Corporate Wi-Fi",
+          "subnet": "10.30.20.0/24"
+        },
+        {
+          "vlan_id": 130,
+          "purpose": "Guest Wi-Fi",
+          "subnet": "10.30.30.0/24"
+        },
+        {
+          "vlan_id": 140,
+          "purpose": "Voice",
+          "subnet": "10.30.40.0/24"
+        },
+        {
+          "vlan_id": 150,
+          "purpose": "Printers",
+          "subnet": "10.30.50.0/24"
+        },
+        {
+          "vlan_id": 160,
+          "purpose": "CCTV",
+          "subnet": "10.30.60.0/24"
+        },
+        {
+          "vlan_id": 170,
+          "purpose": "Access Control",
+          "subnet": "10.30.70.0/24"
+        },
+        {
+          "vlan_id": 700,
+          "purpose": "Quarantine",
+          "subnet": "10.30.200.0/24"
+        }
+      ]
+    }
+  ]
+}
