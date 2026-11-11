@@ -85,6 +85,4 @@ The first module, **M1: Gold branch LAN segmentation**, contains example configu
 
 ## Ownership and usage
 
-**© 2026 Giovani Serra.** This is a **personal portfolio**, not a collaborative project. **External contributions, pull requests and feature requests are not accepted.** Content is publicly visible for reference and demonstration only. No open-source license is granted for my original files. Third-party product, image and documentation rights remain with their owners. See [Project policy](PERSONAL_PROJECT.en.md).
-
-**Security note:** never commit credentials, pre-shared keys, production data, licenses or sensitive device outputs. The original academic reports are not included in this repository.
+**© 2026 Giovani Serra.** This is a **personal portfolio**.
