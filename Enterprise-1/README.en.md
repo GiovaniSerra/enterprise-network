@@ -44,5 +44,3 @@ A fictional credit union must connect a central Data Center to Gold, Silver and 
 ## Evidence requirements
 
 Every module should contain a topology, port mapping, software images/versions, sanitized configuration, commands, expected versus observed outcomes, packet captures and failure analysis. `Validated` status requires actual test execution. No fabricated test evidence has been added.
-
-**Sole authorship:** personal project, no external contributions accepted. See the [policy](../PERSONAL_PROJECT.en.md).
