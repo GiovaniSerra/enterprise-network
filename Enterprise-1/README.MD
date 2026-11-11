@@ -44,5 +44,3 @@ Estudo de uma cooperativa de crédito fictícia que precisa interligar um Data C
 ## Método de comprovação
 
 Cada módulo deve publicar: topologia, mapa de portas, imagens/versões de software, configuração sem credenciais, comandos, resultado esperado, resultado observado, artefatos de captura e diagnóstico de falhas. O estado `validado` só deve ser atribuído a um teste após sua execução. Não foram adicionadas evidências de rede fictícias.
-
-**Autoria exclusiva:** projeto pessoal sem recebimento de contribuições externas. Consulte [política](../PERSONAL_PROJECT.md).
