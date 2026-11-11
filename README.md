@@ -2,7 +2,7 @@
 
 **Idiomas:** [Português](README.md) | [English](README.en.md)
 
-Projeto pessoal de **Giovani Serra** dedicado ao design, à implementação gradual e à validação de uma infraestrutura corporativa multi-site em ambiente virtual. O objetivo é documentar **decisões de engenharia, configurações, tráfego, falhas, testes e evidências**, no estilo de um case de engenharia de redes, e não apenas reunir topologias.
+Projeto pessoal dedicado ao design, à implementação gradual e à validação de uma infraestrutura corporativa multi-site em ambiente virtual. O objetivo é documentar **decisões de engenharia, configurações, tráfego, falhas, testes e evidências**, no estilo de um case de engenharia de redes, e não apenas reunir topologias.
 
 > **Transparência de execução:** o HLD, o LLD e o inventário de exemplo estão documentados. O validador Python e seus testes unitários funcionam localmente; a execução do workflow remoto depende de verificação no GitHub. **Não há evidências publicadas de que a topologia corporativa, a VPN IPsec, o HA ou as políticas estejam operacionais.** Modelos de configuração são explicitamente marcados como não validados.
 
