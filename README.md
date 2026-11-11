@@ -85,6 +85,5 @@ O primeiro laboratório, **M1: segmentação LAN da filial Gold**, tem configura
 
 ## Autoria e uso
 
-**© 2026 Giovani Serra.** Este repositório é um **portfólio pessoal**, não um projeto colaborativo. **Não aceito contribuições externas, pull requests ou solicitações de desenvolvimento.** O conteúdo é público apenas para demonstração e consulta. Não há licença open source concedida aos arquivos de minha autoria. Direitos de produtos, imagens e materiais de terceiros permanecem com seus titulares. Consulte [Política do projeto](PERSONAL_PROJECT.md).
+**© 2026 Giovani Serra.** Este repositório é um **portfólio pessoal**.
 
-**Nota de segurança:** não versionar credenciais, PSKs, dados de produção, licenças ou saídas contendo informações sensíveis. Os documentos acadêmicos originais do PIF não acompanham este repositório.
