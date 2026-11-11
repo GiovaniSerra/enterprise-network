@@ -1,0 +1,26 @@
+# Ambiente e artefatos de laboratorio
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+*.log
+*.pcap
+*.pcapng
+*.unl.lock
+*.swp
+.DS_Store
+Thumbs.db
+# Backups e credenciais: nao commitar
+*.pem
+*.p12
+*.pfx
+*.key
+*.ovpn
+*.bak
+*.backup
+*secrets*.json
+*credentials*.json
