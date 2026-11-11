@@ -2,7 +2,7 @@
 
 **Languages:** [Português](README.md) | [English](README.en.md)
 
-A personal project by **Giovani Serra** focused on progressively designing, implementing and verifying a virtual multi-site enterprise network. Its purpose is to document **engineering decisions, configurations, traffic flows, failures, tests and evidence**, as an integrated network engineering case study rather than a collection of diagrams.
+A personal project focused on progressively designing, implementing and verifying a virtual multi-site enterprise network. Its purpose is to document **engineering decisions, configurations, traffic flows, failures, tests and evidence**, as an integrated network engineering case study rather than a collection of diagrams.
 
 > **Implementation transparency:** the HLD, LLD and sample inventory are documented. The Python validator and unit tests run locally; remote CI execution must still be verified on GitHub. **No evidence has been published that the enterprise topology, IPsec VPN, HA or security policies are operational.** Example configurations are explicitly unverified templates.
 
