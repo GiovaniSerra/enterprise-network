@@ -1,24 +1,28 @@
-name: Validate portfolio inventory
+name: Validate personal networking portfolio
 
 on:
   push:
-    branches: [main]
-  pull_request:
+    branches:
+      - main
+      - 'portfolio/**'
+  workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
-  inventory:
+  quality:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Python
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Validate sample site inventory
+      - name: Validate synthetic inventory
         run: python scripts/validate_inventory.py
-      - name: Unit tests
+      - name: Validate bilingual docs and links
+        run: python scripts/validate_docs.py
+      - name: Run unit tests
         run: python -m unittest discover -s tests -v

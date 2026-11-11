@@ -1,5 +1,7 @@
 # Fontes do PIF e rastreabilidade
 
+**Idiomas:** [Português](SOURCES.md) | [English](SOURCES.en.md)
+
 O planejamento do portfólio foi elaborado com base em **dois documentos acadêmicos fornecidos pelo autor**, mantidos fora do GitHub nesta fase:
 
 | Documento acadêmico | Seções de referência | Adaptado em |

@@ -1,16 +1,18 @@
-# Cenário 01 | Usuario não acessa servico no DC
+# Cenário 01 | Usuário não acessa servico no DC
+
+**Idiomas:** [Português](README.MD) | [English](README.en.md)
 
 **Estado:** roteiro ainda não executado.
 
-**Sintoma simulado:** host `10.10.10.50` na VLAN 110 (Gold) não alcanca servico de exemplo `10.0.10.10` no DC. Esses endereços são exclusivamente ilustrativos.
+**Sintoma simulado:** host `10.10.10.50` na VLAN 110 (Gold) não alcança servico de exemplo `10.0.10.10` no DC. Esses endereços são exclusivamente ilustrativos.
 
-## Hipoteses e verificacoes
+## Hipóteses e verificacoes
 
 1. **Layer 2:** verificar VLAN, porta access, trunk, MAC address-table e STP.
 2. **Gateway:** validar IP, mascara, ARP e gateway do host.
 3. **Roteamento:** conferir rota Gold -> DC e DC -> Gold, inclusive next-hop de retorno.
 4. **Segurança:** política NGFW/ACL para origem/destino/porta e log de negacao.
-5. **WAN/VPN:** se o caminho esperado for tunel, verificar SA e contadores.
+5. **WAN/VPN:** se o caminho esperado for túnel, verificar SA e contadores.
 
 ## Evidencias a coletar
 

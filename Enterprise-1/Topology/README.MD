@@ -1,13 +1,15 @@
 # Topologias
 
-Os diagramas existentes são **referencias arquiteturais da pós-graduação**; o estado de cada laboratório so será declarado operacional com evidências de teste.
+**Idiomas:** [Português](README.MD) | [English](README.en.md)
+
+Os diagramas existentes são **referências arquiteturais da pós-graduação**; o estado de cada laboratório so será declarado operacional com evidências de teste.
 
 | Site | Visual | Status |
 | --- | --- | --- |
-| Gold | [Abrir diagrama](Gold%20site/Gold%20-%20topology.png) | Referencia |
-| Silver | [Abrir diagrama](Silver%20Site/Silver%20-%20topology.png) | Referencia |
+| Gold | [Abrir diagrama](Gold%20site/Gold%20-%20topology.png) | Referência |
+| Silver | [Abrir diagrama](Silver%20Site/Silver%20-%20topology.png) | Referência |
 | Silver+ | [Abrir variante](Silver%20Site/Silver%2B%20-%20Topology.png) | Variante de estudo; fora do baseline |
-| Bronze | [Abrir diagrama](Bronze%20Site/Bronze%20-%20Topology.png) | Referencia |
+| Bronze | [Abrir diagrama](Bronze%20Site/Bronze%20-%20Topology.png) | Referência |
 | Data Center | [HLD lógico do DC](../HLD/README.MD) | Diagrama físico detalhado pendente |
 
 ## Gold
@@ -22,4 +24,4 @@ Os diagramas existentes são **referencias arquiteturais da pós-graduação**; 
 
 ![Topologia conceitual Bronze](Bronze%20Site/Bronze%20-%20Topology.png)
 
-**Proxima entrega:** criar topologia EVE-NG efetivamente montada, com screenshots datados e mapa de interfaces e links.
+**Próxima entrega:** criar topologia EVE-NG efetivamente montada, com screenshots datados e mapa de interfaces e links.
