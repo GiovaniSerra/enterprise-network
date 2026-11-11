@@ -1,14 +1,16 @@
 # Plano de implementação | EVE-NG
 
-Este plano adapta o PIF academico a uma execucao de laboratório por marcos. O Plano de Implementação original considera validação, instalação, configuração, servicos, testes, monitoramento, riscos e rollback. Neste repositorio, **nenhuma configuração de rede e dada como validada antes de resultados reproduzíveis**.
+**Idiomas:** [Português](README.MD) | [English](README.en.md)
+
+Este plano adapta o PIF acadêmico a uma execução de laboratório por marcos. O Plano de Implementação original considera validação, instalação, configuração, serviços, testes, monitoramento, riscos e rollback. Neste repositório, **nenhuma configuração de rede e dada como validada antes de resultados reproduzíveis**.
 
 ## M0 | Preparacao
 
-1. Inventariar VMs, imagens/versoes e requisitos de RAM/CPU/licencas.
+1. Inventariar VMs, imagens/versões e requisitos de RAM/CPU/licenças.
 2. Definir nomes dos dispositivos, interfaces, rede de gerenciamento e IDs de site.
 3. Rodar `python scripts/validate_inventory.py` e conferir `Enterprise-1/inventory/sites.json`.
 4. Estabelecer baseline limpo e snapshot (quando suportado).
-5. Registrar versao e imagem utilizada antes de adicionar templates CLI.
+5. Registrar versão e imagem utilizada antes de adicionar templates CLI.
 
 ## M1 | LAN minima DC + Gold
 
@@ -18,16 +20,18 @@ Este plano adapta o PIF academico a uma execucao de laboratório por marcos. O P
 4. Validar IP/gateway, ARP, MAC, STP e reachability.
 5. Impedir Guest -> redes internas com política no ponto de roteamento efetivo.
 
-### Matriz minima de aceite M1
+### Matriz de aceite: M1 LAN e extensão posterior de gestão
 
 | Teste | Resultado esperado | Como comprovar |
 | --- | --- | --- |
 | Host 110 -> gateway da VLAN 110 | Responde | `ping` e tabela ARP |
 | Host 130 -> servidor corporativo | **Bloqueado** | Log deny/ACL e tentativa do host |
-| Admin autorizado -> gerência | Permitido | Sessao SSH + origem |
-| Host não autorizado -> gerência | Bloqueado | ACL/policy + tentativa |
+| Admin autorizado -> gerência (**fase posterior**) | Permitido após configuração de gestão | Sessão SSH + origem |
+| Host não autorizado -> gerência (**fase posterior**) | Bloqueado após configuração de gestão | ACL/policy + tentativa |
 | Trunk e VLANs | Apenas VLANs previstas | `show interfaces trunk`, `show vlan brief` |
 | STP | Root e portas coerentes | `show spanning-tree` |
+
+**Nota de escopo:** o [guia M1 Gold LAN](../labs/M1-GOLD-LAN/README.md) cobre primeiro um subconjunto da LAN Gold; a integração ao DC e ao FortiGate permanece posterior. A VLAN 100 é reservada nesse exemplo, sem gestão SSH já habilitada.
 
 ## M2 | Roteamento e WAN
 
@@ -35,19 +39,19 @@ Este plano adapta o PIF academico a uma execucao de laboratório por marcos. O P
 2. Definir transporte privado MPLS simulado e caminhos sob falha.
 3. Configurar IPsec route-based onde suportado; verificar IKE e Child SA nas duas pontas.
 4. Impedir NAT em comunicação privada; permitir NAT para a Internet.
-5. Medir failover e rota de retorno com logs e conectividade continua. Não assumir objetivos de convergência sem medicao.
+5. Medir failover e rota de retorno com logs e conectividade contínua. Não assumir objetivos de convergência sem medicao.
 
 ## M3 | Silver e Bronze
 
-Repetir controles LAN; Silver com rotas estáticas no baseline, evoluindo para OSPF somente se documentado e testado. Bronze com equipamento interno único e rotas estáticas monitoradas; validar limites do failover e documentar pontos unicos de falha.
+Repetir controles LAN; Silver com rotas estáticas no baseline, evoluindo para OSPF somente se documentado e testado. Bronze com equipamento interno único e rotas estáticas monitoradas; validar limites do failover e documentar pontos únicos de falha.
 
 ## Controle de mudancas e rollback
 
-- **Antes:** salvar configuração segura, snapshot quando disponivel, baseline de conectividade e objetivo.
+- **Antes:** salvar configuração segura, snapshot quando disponível, baseline de conectividade e objetivo.
 - **Durante:** executar uma mudanca por vez; usar console de emergência; acompanhar logs.
 - **Depois:** comparar testes positivos e negativos, coletar tabelas de rota, estado de VPN e metricas.
-- **Reversao:** restaurar configuração anterior/snapshot caso os criterios de aceite falhem. O limite de 30 min do PIF e referencia de janela planejada, não garantia de recuperação.
+- **Reversao:** restaurar configuração anterior/snapshot caso os critérios de aceite falhem. O limite de 30 min do PIF e referência de janela planejada, não garantia de recuperação.
 
 ## Onde registrar resultados
 
-Salvar relato de cada teste no modelo de [`evidence/README.md`](../evidence/README.md), sem segredos. Para cada cenário, registrar **expected / observed / pass-fail / data / versao / comando**.
+Salvar relato de cada teste no modelo de [`evidence/README.md`](../evidence/README.md), sem segredos. Para cada cenário, registrar **expected / observed / pass-fail / data / versão / comando**.

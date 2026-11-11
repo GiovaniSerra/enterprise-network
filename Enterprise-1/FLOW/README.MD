@@ -1,8 +1,10 @@
 # Fluxos de tráfego | Design e testes planejados
 
+**Idiomas:** [Português](README.MD) | [English](README.en.md)
+
 Os diagramas a seguir são **fluxos esperados**, não capturas de pacotes nem logs já coletados.
 
-## 1. Usuario corporativo -> Data Center
+## 1. Usuário corporativo -> Data Center
 
 ```mermaid
 sequenceDiagram

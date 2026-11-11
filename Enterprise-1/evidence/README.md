@@ -1,6 +1,8 @@
 # Evidencias | Padrao de validação
 
-**Estado:** nenhum resultado de rede foi inserido nesta fundacao. Preencher cada evidência **apenas depois de executar o teste**.
+**Idiomas:** [Português](README.md) | [English](README.en.md)
+
+**Estado:** nenhum resultado de rede foi inserido nesta fundação. Preencher cada evidência **apenas depois de executar o teste**.
 
 ## Modelo para cada evidência
 
@@ -24,7 +26,7 @@ Referencia a commit de configuração:
 
 ## Regras de publicacao
 
-- Os screenshots devem conter contexto e versao, mas **não** senhas, PSKs, IPs reais, dados de clientes ou licencas.
+- Os screenshots devem conter contexto e versão, mas **não** senhas, PSKs, IPs reais, dados de clientes ou licenças.
 - Capturas e logs são evidências, mas necessitam interpretacao escrita.
 - Uma imagem de interface sem teste não prova failover, HA, filtragem, nem IKE/IPsec.
 - Cada teste deve conter tanto o caso **positivo** quanto o **negativo** quando relevante.
